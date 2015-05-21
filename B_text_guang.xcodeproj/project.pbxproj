@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA7602161B0E5E2300204E93 /* FBinfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7602151B0E5E2300204E93 /* FBinfo.m */; };
 		AAF26B2F1B0BAFFE002E105E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF26B2E1B0BAFFE002E105E /* main.m */; };
 		AAF26B321B0BAFFE002E105E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF26B311B0BAFFE002E105E /* AppDelegate.m */; };
 		AAF26B351B0BAFFE002E105E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF26B341B0BAFFE002E105E /* ViewController.m */; };
@@ -31,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA7602141B0E5E2300204E93 /* FBinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBinfo.h; sourceTree = "<group>"; };
+		AA7602151B0E5E2300204E93 /* FBinfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBinfo.m; sourceTree = "<group>"; };
 		AAF26B291B0BAFFD002E105E /* B_text_guang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = B_text_guang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF26B2D1B0BAFFE002E105E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAF26B2E1B0BAFFE002E105E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -99,6 +102,8 @@
 				AAF26B311B0BAFFE002E105E /* AppDelegate.m */,
 				AAF26B331B0BAFFE002E105E /* ViewController.h */,
 				AAF26B341B0BAFFE002E105E /* ViewController.m */,
+				AA7602141B0E5E2300204E93 /* FBinfo.h */,
+				AA7602151B0E5E2300204E93 /* FBinfo.m */,
 				AAF26B361B0BAFFE002E105E /* Main.storyboard */,
 				AAF26B391B0BAFFE002E105E /* Images.xcassets */,
 				AAF26B3B1B0BAFFE002E105E /* LaunchScreen.xib */,
@@ -246,6 +251,7 @@
 				AAF26B351B0BAFFE002E105E /* ViewController.m in Sources */,
 				AAF26B321B0BAFFE002E105E /* AppDelegate.m in Sources */,
 				AAF26B2F1B0BAFFE002E105E /* main.m in Sources */,
+				AA7602161B0E5E2300204E93 /* FBinfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +456,7 @@
 				AAF26B4E1B0BAFFE002E105E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AAF26B4F1B0BAFFE002E105E /* Build configuration list for PBXNativeTarget "B_text_guangTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +465,7 @@
 				AAF26B511B0BAFFE002E105E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

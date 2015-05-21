@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4153783C-41DC-4410-8614-C1AC7E3B25F6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>B_text_guang</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E20C42A3DEB042714C72FC74D5AF4F846FCBB654</key>
+		<string>https://github.com/guangLess/TEST.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>B_text_guang.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E20C42A3DEB042714C72FC74D5AF4F846FCBB654</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/guangLess/TEST.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E20C42A3DEB042714C72FC74D5AF4F846FCBB654</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E20C42A3DEB042714C72FC74D5AF4F846FCBB654</string>
+			<key>IDESourceControlWCCName</key>
+			<string>B_text_guang</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -30,8 +30,6 @@
 
 -(void)signInViaProfile{
     FBSDKProfile * profile = [[FBSDKProfile alloc] init];
-    
-
 }
 
 - (IBAction)loginButtonC:(id)sender {
@@ -65,8 +63,12 @@
                  //self.profileImage.pictureMode =  FBSDKProfilePictureModeSquare;
                  [self.profileImage addSubview: imageV];
                  [self.profileImage setContentMode:UIViewContentModeScaleAspectFit];
-                 
                  self.name.text = [NSString stringWithFormat: @"-> %@ \r%@", [result objectForKey:@"name"],[result objectForKey:@"email"]];
+                 FBinfo * fbinfo = [FBinfo new];
+//                 fbinfo.name = [result objectForKey:@"name"];
+//                 fbinfo.email = [result objectForKey:@"email"];
+                 NSMutableDictionary * temp = [[NSMutableDictionary alloc]init];
+                 temp = [fbinfo add:[result objectForKey:@"name"] name:[result objectForKey:@"email"]];
              }
          }];
     }
