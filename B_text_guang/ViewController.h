@@ -9,8 +9,14 @@
 #import <UIKit/UIKit.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+
 #import "FBinfo.h"
+//#import <FBSDKSystemAccountStoreAdapter.h>
+#import <FBSDKLoginKit/FBSDKLoginManager.h>
+//#import "FBSDKLoginManager+Internal.h"
 //#import <FacebookSDK/FacebookSDK.h>
+//#import "FBSDKLoginCompletion+Internal.h"
+
 
 
 @interface ViewController : UIViewController

@@ -11,6 +11,10 @@
  */
 #import "ViewController.h"
 
+
+
+
+
 @interface ViewController ()
 
 @end
@@ -26,6 +30,9 @@
      self.fbLoginButton.delegate = self
      FBSDKProfile.enableUpdatesOnAccessTokenChange(true)
      */
+   // to get a new access token. This can be done through the Facebook Javascript SDK, or by redirecting the user to the Log In page.
+    //
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getFBdata) name: FBSDKAccessTokenDidChangeNotification object:nil];
 }
 
 -(void)signInViaProfile{
@@ -40,6 +47,7 @@
        
         if (result) {
             self.userString = result.token.userID;
+            NSLog(@" token expries at %@",result.token.expirationDate);
             [self signInViaProfile];
             [self getFBdata];
 
@@ -52,8 +60,15 @@
 }
 
 -(void)getFBdata{
+    
+     //FBSDKLoginManager.renewSystemCredentials { (result:ACAccountCredentialRenewResult, error:NSError!) -> Void in
+
     if ([FBSDKAccessToken currentAccessToken]) {
+        NSLog(@"FBSDKAccesToken currentAccessToken = %@", [FBSDKAccessToken currentAccessToken]);
         [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:nil]
+         //@property (readonly, copy, nonatomic) NSDate *expirationDate
+         
+
          startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, NSDictionary *result, NSError *error) {
              if (!error) {
                  NSLog(@"fetched user email :%@\n user name : %@ ", [result objectForKey:@"email"], [result objectForKey:@"name"]);
@@ -72,8 +87,11 @@
              }
          }];
     }
+    [FBSDKProfile enableUpdatesOnAccessTokenChange:YES];
  
 }
+    
+    
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
